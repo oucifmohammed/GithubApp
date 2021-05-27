@@ -5,7 +5,7 @@ import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import com.example.githubapp.R
 import com.example.githubapp.data.remote.Api
-import com.example.githubrepositoriesapp.other.Constant.BASE_URL
+import com.example.githubapp.other.Constant.BASE_URL
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

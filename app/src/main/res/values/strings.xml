@@ -4,4 +4,6 @@
     <string name="repository_description">Repository description ...</string>
     <string name="repo_owner_name">Repo owner name</string>
     <string name="number_of_stars">number of stars</string>
+    <string name="repositories_could_not_be_loaded">Repositories could not be loaded</string>
+    <string name="retry">Retry</string>
 </resources>

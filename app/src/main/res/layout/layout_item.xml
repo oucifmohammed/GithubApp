@@ -1,74 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="200dp"
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:paddingBottom="20dp"
-    android:paddingStart="15dp">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="7dp"
+    android:layout_marginStart="7dp"
+    app:cardCornerRadius="7dp"
+    android:layout_marginBottom="6dp">
 
-    <TextView
-        android:id="@+id/repo_title"
-        android:layout_width="wrap_content"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/repository_name"
-        android:textSize="22sp"
-        android:textColor="@color/black"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="30dp"/>
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:paddingBottom="20dp"
+        android:paddingStart="15dp">
 
-    <TextView
-        android:id="@+id/repo_desc"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="@string/repository_description"
-        android:textSize="19sp"
-        android:textColor="@color/repo_desc_color"
-        app:layout_constraintTop_toBottomOf="@+id/repo_title"
-        app:layout_constraintStart_toStartOf="@+id/repo_title"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="13dp"
-        android:layout_marginEnd="40dp"/>
+        <TextView
+            android:id="@+id/repo_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/repository_name"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="30dp"/>
 
-    <ImageView
-        android:id="@+id/repo_image"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@id/repo_desc"
-        android:src="@drawable/repo_image"/>
+        <TextView
+            android:id="@+id/repo_desc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/repository_description"
+            android:textSize="19sp"
+            android:textColor="@color/repo_desc_color"
+            app:layout_constraintTop_toBottomOf="@+id/repo_title"
+            app:layout_constraintStart_toStartOf="@+id/repo_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="40dp"/>
 
-    <TextView
-        android:id="@+id/repo_owner_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toEndOf="@id/repo_image"
-        app:layout_constraintTop_toTopOf="@id/repo_image"
-        app:layout_constraintBottom_toBottomOf="@id/repo_image"
-        android:layout_marginStart="10dp"
-        android:text="@string/repo_owner_name"
-        android:textColor="@color/black"
-        android:textSize="15sp"/>
+        <ImageView
+            android:id="@+id/repo_image"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:layout_constraintTop_toBottomOf="@id/repo_desc"
+            app:layout_constraintStart_toStartOf="@id/repo_desc"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/repo_image"/>
 
-    <TextView
-        android:id="@+id/num_stars"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="@id/star_image"
-        app:layout_constraintTop_toTopOf="@id/star_image"
-        android:layout_marginEnd="8dp"
-        android:text="@string/number_of_stars"
-        android:textSize="16sp"/>
+        <TextView
+            android:id="@+id/repo_owner_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/repo_image"
+            app:layout_constraintTop_toTopOf="@id/repo_image"
+            app:layout_constraintBottom_toBottomOf="@id/repo_image"
+            android:layout_marginStart="10dp"
+            android:text="@string/repo_owner_name"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
 
-    <ImageView
-        android:id="@+id/star_image"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:src="@drawable/star_image"
-        app:layout_constraintEnd_toStartOf="@id/num_stars"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginEnd="8dp"/>
+        <TextView
+            android:id="@+id/num_stars"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/star_image"
+            app:layout_constraintTop_toTopOf="@id/star_image"
+            android:layout_marginEnd="12dp"
+            android:text="@string/number_of_stars"
+            android:textSize="17sp"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <ImageView
+            android:id="@+id/star_image"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/star_image"
+            app:layout_constraintEnd_toStartOf="@id/num_stars"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginEnd="8dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>
