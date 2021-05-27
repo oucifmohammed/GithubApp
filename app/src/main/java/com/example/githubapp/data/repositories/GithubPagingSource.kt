@@ -1,12 +1,14 @@
-package com.example.githubapp.data.remote
+package com.example.githubapp.data.repositories
 
 import androidx.paging.PagingSource
 import androidx.paging.PagingState
+import com.example.githubapp.data.remote.Api
+import com.example.githubapp.data.remote.Item
 import com.example.githubapp.other.Constant.REPOSITORIES_STARTING_PAGE_INDEX
 
 class GithubPagingSource(
     val githubApi: Api
-): PagingSource<Int,Item>(){
+): PagingSource<Int, Item>(){
 
     override suspend fun load(params: LoadParams<Int>): LoadResult<Int, Item> {
         val position = params.key ?: REPOSITORIES_STARTING_PAGE_INDEX

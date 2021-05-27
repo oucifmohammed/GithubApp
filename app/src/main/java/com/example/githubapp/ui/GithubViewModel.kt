@@ -1,12 +1,11 @@
 package com.example.githubapp.ui
 
 import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import androidx.paging.*
 import com.example.githubapp.data.remote.Api
-import com.example.githubapp.data.remote.GithubPagingSource
+import com.example.githubapp.data.repositories.GithubPagingSource
 import com.example.githubapp.data.remote.Item
 import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
