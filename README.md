@@ -14,7 +14,7 @@ injection principle and it works like this :
 - We need to provide modules which will know how to create the dependency and their lifecycle and the number of instances to be created.
 - Then inject these dependencies in the desired places for example we can create an instance of DAO  and inject later in the repository class.
 
-###Retrofit :
+### Retrofit :
 
 Retrofit is a REST Client for Java and Android. It makes it relatively easy to retrieve and upload JSON (or other structured data) via a REST based webservice.
 
@@ -24,7 +24,7 @@ To work with retrofit we need to do these steps :
 - Create an interface that define the possible HTTP operations like GET or POST.
 - use Retrofit.Builder class : instance which uses the interface and the Builder API to allow defining the URL end point for the HTTP operations.
 
-###Paging3 Library:
+### Paging3 Library:
 
 The Paging library helps us load and display pages of data from a larger dataset from local storage or over network. This approach allows our
 app to use both network bandwidth and system resources more efficiently.
@@ -36,10 +36,10 @@ In this project i used these components of the paging library :
 - PagingDataAdapter, a RecyclerView adapter that handles paginated data.
 - LoadStateAdapter , a component reponsible for the visibility of the footer.
 
-###Glide library:
+### Glide library:
 
 Glide is an Image Loader Library for Android.
 
 
 
-Also thie app is based on the MVVM architecture and kotlin coroutines for asyc work.
+#### Also thie app is based on the MVVM architecture and kotlin coroutines for asyc work.
